@@ -1,0 +1,31 @@
+{
+  "general": {
+    "package": "LibreSpeedtest",
+    "name": "LibreSpeed Speedtest",
+    "version": "5.5.0",
+    "developer": "librespeed",
+    "maintainer": "007revad",
+    "email": "007daver@gmail.com",
+    "website": "https://github.com/007revad/Libra_Open_Speedtest",
+    "architecture": "any",
+    "firmware": "5.0.0"
+  },
+  "adm-desktop": {
+    "app": {
+      "type": "custom",
+      "protocol": "http",
+      "port": 39878,
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+  },
+  "register": {
+    "boot-priority": {
+      "start-order": 50,
+      "stop-order": 50
+    }
+  }
+}
