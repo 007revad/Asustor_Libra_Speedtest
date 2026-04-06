@@ -56,7 +56,8 @@ jobs:
       - name: Package Asustor App
         if: steps.check_assets.outputs.apk_count == '0'
         id: package_asustor_app
-        uses: asustor-contrib/ga-package-asustor-app@v2
+        #uses: asustor-contrib/ga-package-asustor-app@v2
+        uses: 007revad/ga-package-asustor-app@v2
         with:
           apkg-dir: 'src'
           out-dir: 'dist'
